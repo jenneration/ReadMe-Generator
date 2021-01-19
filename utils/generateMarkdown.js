@@ -1,38 +1,52 @@
+//Function to return my project link
+const url = function generateProjectUrl(username, title) {
+    const kebabCaseTitle = title.toLowerCase().split(" ").join("-");
+    return `https://github.com/${username}/${kebabCaseTitle}`;
+};
+
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function generateProjectUrl(GitHub, title) {
-    const kebabCaseTitle = title.toLowerCase().split(" ").join("-");
-    return `https://GitHub.com/${GitHub}/${kebabCaseTitle}`
-}
 
-function renderLicenseBadge(license) {
+
+const badge = function renderLicenseBadge(license) {
+    const splitLicense = license.split(" ", 1);
+    console.log(splitLicense);
     if (license != "None") {
-        return `[![GitHub license](https://img.shields.io/badge/license-${license}-blue.svg)](${generateProjectUrl(username, title)})`
+        return `[![GitHub license](https://img.shields.io/badge/license-${splitLicense}-blue.svg)]`
     }
 }
+
+
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {
-    if (license != "None") {
-        return `\n * [License](#license)\n`;
-    }
-}
+// const licenseLink = function renderLicenseLink(license) {
+//     if (license != "None") {
+//         return `[license link](https://opensource.org/licenses/${license}))`
+//     }
+// }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {
-    if (license != "None") {
-        return `## License
+// console.log(licenseLink);
 
-    This project is licensed under the ${license} License`
-    }
-}
+// // TODO: Create a function that returns the license section of README
+// // If there is no license, return an empty string
+// const licenseSection = function renderLicenseSection(license) {
+//     if (license != "None") {
+//         return `## License
+
+//     This project is licensed under the ${license} License`
+//     }
+// }
+// console.log(licenseSection);
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
     return `
 # ${data.title}
+
+${badge(data.license)};
+${url(data.username, data.title)};
+
 
 ## Table of Contents
 - [Description](#description)
@@ -42,25 +56,25 @@ function generateMarkdown(data) {
 - [Testing](#testing)
 - [Questions](#questions)
 
-    ### Description
+    ## Description
     ${data.description}
 
-    ### Installation
+    ## Installation
     ${data.installation}
 
-    ### Usage
+    ## Usage
     ${data.usage}
 
-    ### Contributing
+    ## Contributing
     ${data.contributing}
 
-    ### Testing
+    ## Testing
     ${data.testing}
 
-    ### License
+    ## License
     ${data.license}
 
-    ### Questions
+    ## Questions
     Contact me with any questions: ${data.email}, [GitHub](https://github.com/${data.username})
 
 `;

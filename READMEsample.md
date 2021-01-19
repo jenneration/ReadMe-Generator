@@ -1,5 +1,9 @@
 
-# Readme Generator
+# READ
+
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)];
+https://github.com/jenneration/read;
+
 
 ## Table of Contents
 - [Description](#description)
@@ -9,24 +13,24 @@
 - [Testing](#testing)
 - [Questions](#questions)
 
-    ### Description
-    A little app that generates a little readme for your git hub
+    ## Description
+    undefined
 
-    ### Installation
-    requires npm inquirer
+    ## Installation
+    undefined
 
-    ### Usage
-    automates your readme
+    ## Usage
+    undefined
 
-    ### Contributing
-    none
+    ## Contributing
+    undefined
 
-    ### Testing
-    none
+    ## Testing
+    undefined
 
-    ### License
-    GPL 3.0
+    ## License
+    MIT
 
-    ### Questions
-    Contact me with any questions: jenner.garcia@gmail.com, [GitHub](https://github.com/jenneration)
+    ## Questions
+    Contact me with any questions: j, [GitHub](https://github.com/jenneration)
 

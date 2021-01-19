@@ -10,11 +10,11 @@ const questions = [{
         message: "What is your project title?",
         name: "title"
     },
-    // {
-    //     type: "input",
-    //     message: "Provide a short description of your project.",
-    //     name: "description"
-    // },
+    {
+        type: "input",
+        message: "Provide a short description of your project.",
+        name: "description"
+    },
     // {
     //     type: "input",
     //     message: "Provide installation instructions for your project.",

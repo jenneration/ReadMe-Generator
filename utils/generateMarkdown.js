@@ -13,6 +13,8 @@ const badge = function renderLicenseBadge(license) {
     console.log(splitLicense);
     if (license != "None") {
         return `![GitHub license](https://img.shields.io/badge/license-${splitLicense}-blue.svg)`
+    } else {
+        return ``
     }
 }
 
@@ -24,6 +26,8 @@ const licenseLink = function renderLicenseLink(license) {
     const splitLicense = license.split(" ").join("-");
     if (license != "None") {
         return `[license link](https://opensource.org/licenses/${splitLicense})`
+    } else {
+        return ``
     }
     console.log(licenseLink);
 }

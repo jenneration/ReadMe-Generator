@@ -1,9 +1,9 @@
 
-# read
+# readme
 
-![GitHub license](https://img.shields.io/badge/license-GPL-blue.svg);
-[license link](https://opensource.org/licenses/GPL-3.0);
-https://github.com/jenneration/read;
+;
+;
+https://github.com/jenner/readme;
 
 
 ## Table of Contents
@@ -15,7 +15,7 @@ https://github.com/jenneration/read;
 - [Questions](#questions)
 
     ## Description
-    undefined
+    yes
 
     ## Installation
     undefined
@@ -30,8 +30,8 @@ https://github.com/jenneration/read;
     undefined
 
     ## License
-    GPL 3.0
+    None
 
     ## Questions
-    Contact me with any questions: , [GitHub](https://github.com/jenneration)
+    Contact me with any questions: j, [GitHub](https://github.com/jenner)
 

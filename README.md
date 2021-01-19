@@ -1,5 +1,5 @@
 
-    # Readme-Generator
+    # Readme Generator
 
     ## Table of Contents
     - [Description](#description)
@@ -13,10 +13,10 @@
     An app
 
     ### Installation
-    inquirer
+    Push button
 
     ### Usage
-    Not many
+    build a readme
 
     ### Contributing
     none
@@ -28,5 +28,5 @@
     Apache 2.0
 
     ### Questions
-    Contact me with any questions: jenner@gmail.com, [GitHub](https://github.com/jenneration)
+    Contact me with any questions: jenner.garcia@gmail.com, [GitHub](https://github.com/jenneration)
 

@@ -4,9 +4,8 @@ const url = function generateProjectUrl(username, title) {
     return `https://github.com/${username}/${kebabCaseTitle}`;
 };
 
-// TODO: Create a function that returns a license badge based on which license is passed in
+// TODO: BADGE: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-
 
 const badge = function renderLicenseBadge(license) {
     const splitLicense = license.split(" ", 1);
@@ -17,10 +16,10 @@ const badge = function renderLicenseBadge(license) {
         return "";
     }
 }
+console.log(badge);
 
 
-
-// TODO: Create a function that returns the license link
+// TODO: LICENSE LINK: Create function to return license link
 // If there is no license, return an empty string
 const licenseLink = function renderLicenseLink(license) {
     const splitLicense = license.split(" ").join("-");
@@ -31,7 +30,7 @@ const licenseLink = function renderLicenseLink(license) {
     }
 }
 
-// // TODO: Create a function that returns the license section of README
+// // TODO: LICENSE SECTION: Create function to return license section of README
 // If there is no license, return an empty string
 const licenseSection = function renderLicenseSection(license) {
     if (license != "None") {

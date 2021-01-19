@@ -14,7 +14,7 @@ https://github.com/jenneration/readme-generator;
 - [Questions](#questions)
 
 ## Description
-A node.js CLI
+A node CLI application that generates a readme file
 
 ## Installation
 undefined
@@ -33,5 +33,5 @@ undefined
     This project is licensed under the standard $[MIT License](https://opensource.org/licenses/MIT);
 
 ## Questions
-Contact me with any questions: jgmail.com, [GitHub](https://github.com/jenneration)
+Contact me with any questions: jjjggg, [GitHub](https://github.com/jenneration)
 

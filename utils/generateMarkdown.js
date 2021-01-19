@@ -12,7 +12,7 @@ const badge = function renderLicenseBadge(license) {
     const splitLicense = license.split(" ", 1);
     console.log(splitLicense);
     if (license != "None") {
-        return `[![GitHub license](https://img.shields.io/badge/license-${splitLicense}-blue.svg)`
+        return `![GitHub license](https://img.shields.io/badge/license-${splitLicense}-blue.svg)`
     }
 }
 
@@ -21,9 +21,9 @@ const badge = function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 const licenseLink = function renderLicenseLink(license) {
-    const splitLicense = license.split(" ", 1);
+    const splitLicense = license.split(" ").join("-");
     if (license != "None") {
-        return `[license link](https://opensource.org/licenses/${splitLicense}))`
+        return `[license link](https://opensource.org/licenses/${splitLicense})`
     }
     console.log(licenseLink);
 }

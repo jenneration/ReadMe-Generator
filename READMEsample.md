@@ -1,9 +1,9 @@
 
-# Readme Generator
+# read
 
-[![GitHub license](https://img.shields.io/badge/license-Apache-blue.svg);
-[license link](https://opensource.org/licenses/Apache));
-https://github.com/jenneration/readme-generator;
+![GitHub license](https://img.shields.io/badge/license-GPL-blue.svg);
+[license link](https://opensource.org/licenses/GPL-3.0);
+https://github.com/jenneration/read;
 
 
 ## Table of Contents
@@ -30,8 +30,8 @@ https://github.com/jenneration/readme-generator;
     undefined
 
     ## License
-    Apache 2.0
+    GPL 3.0
 
     ## Questions
-    Contact me with any questions: j@gmail.com, [GitHub](https://github.com/jenneration)
+    Contact me with any questions: , [GitHub](https://github.com/jenneration)
 

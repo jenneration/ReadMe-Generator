@@ -1,5 +1,5 @@
 
-# Readme Generagor
+# Readme Generator
 
 ## Table of Contents
 - [Description](#description)
@@ -10,23 +10,23 @@
 - [Questions](#questions)
 
     ### Description
-    an app
+    A little app that generates a little readme for your git hub
 
     ### Installation
-    undefined
+    requires npm inquirer
 
     ### Usage
-    undefined
+    automates your readme
 
     ### Contributing
-    undefined
+    none
 
     ### Testing
-    undefined
+    none
 
     ### License
-    undefined
+    GPL 3.0
 
     ### Questions
-    Contact me with any questions: undefined, [GitHub](https://github.com/undefined)
+    Contact me with any questions: jenner.garcia@gmail.com, [GitHub](https://github.com/jenneration)
 

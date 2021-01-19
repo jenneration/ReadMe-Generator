@@ -76,9 +76,9 @@ const data = inquirer.prompt.response;
 
 function init() {
     inquirer.prompt(questions).then(response => {
-        fs.writeFile('README.md', generateMarkdown(response), "utf8", function(err) {
+        fs.writeFile('READMEsample.md', generateMarkdown(response), function(err) {
             if (err) throw err;
-            console.log(data);
+            console.log("Written");
         });
     })
 }

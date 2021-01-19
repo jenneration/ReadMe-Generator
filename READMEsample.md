@@ -1,9 +1,8 @@
 
-# readme
+# Readme Generator
 
-;
-;
-https://github.com/jenner/readme;
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)]((https://opensource.org/licenses/MIT));
+https://github.com/jenneration/readme-generator;
 
 
 ## Table of Contents
@@ -14,24 +13,25 @@ https://github.com/jenner/readme;
 - [Testing](#testing)
 - [Questions](#questions)
 
-    ## Description
-    yes
+## Description
+A node.js CLI
 
-    ## Installation
-    undefined
+## Installation
+undefined
 
-    ## Usage
-    undefined
+## Usage
+undefined
 
-    ## Contributing
-    undefined
+## Contributing
+undefined
 
-    ## Testing
-    undefined
+## Testing
+undefined
 
-    ## License
-    None
+## License
 
-    ## Questions
-    Contact me with any questions: j, [GitHub](https://github.com/jenner)
+    This project is licensed under the standard $[MIT License](https://opensource.org/licenses/MIT);
+
+## Questions
+Contact me with any questions: jgmail.com, [GitHub](https://github.com/jenneration)
 

@@ -14,7 +14,7 @@ const badge = function renderLicenseBadge(license) {
     if (license != "None") {
         return `![GitHub license](https://img.shields.io/badge/license-${splitLicense}-blue.svg)`
     } else {
-        return ``
+        return "";
     }
 }
 
@@ -25,33 +25,29 @@ const badge = function renderLicenseBadge(license) {
 const licenseLink = function renderLicenseLink(license) {
     const splitLicense = license.split(" ").join("-");
     if (license != "None") {
-        return `[license link](https://opensource.org/licenses/${splitLicense})`
+        return `(https://opensource.org/licenses/${splitLicense})`;
     } else {
-        return ``
+        return "";
     }
-    console.log(licenseLink);
 }
 
-// console.log(licenseLink);
-
 // // TODO: Create a function that returns the license section of README
-// // If there is no license, return an empty string
-// const licenseSection = function renderLicenseSection(license) {
-//     if (license != "None") {
-//         return `## License
+// If there is no license, return an empty string
+const licenseSection = function renderLicenseSection(license) {
+    if (license != "None") {
+        return `## License
 
-//     This project is licensed under the ${license} License`
-//     }
-// }
-// console.log(licenseSection);
+    This project is licensed under the standard $[${license} License]`
+    }
+}
+console.log(licenseSection);
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
     return `
 # ${data.title}
 
-${badge(data.license)};
-${licenseLink(data.license)};
+[${badge(data.license)}](${licenseLink(data.license)});
 ${url(data.username, data.title)};
 
 
@@ -63,26 +59,25 @@ ${url(data.username, data.title)};
 - [Testing](#testing)
 - [Questions](#questions)
 
-    ## Description
-    ${data.description}
+## Description
+${data.description}
 
-    ## Installation
-    ${data.installation}
+## Installation
+${data.installation}
 
-    ## Usage
-    ${data.usage}
+## Usage
+${data.usage}
 
-    ## Contributing
-    ${data.contributing}
+## Contributing
+${data.contributing}
 
-    ## Testing
-    ${data.testing}
+## Testing
+${data.testing}
 
-    ## License
-    ${data.license}
+${licenseSection(data.license)}${licenseLink(data.license)};
 
-    ## Questions
-    Contact me with any questions: ${data.email}, [GitHub](https://github.com/${data.username})
+## Questions
+Contact me with any questions: ${data.email}, [GitHub](https://github.com/${data.username})
 
 `;
 }

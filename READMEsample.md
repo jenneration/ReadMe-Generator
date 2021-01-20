@@ -1,8 +1,8 @@
 
-# Readme Generator
+# Generator
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)]((https://opensource.org/licenses/MIT));
-https://github.com/jenneration/readme-generator;
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT);
+https://github.com/jenneration/generator;
 
 
 ## Table of Contents
@@ -14,7 +14,7 @@ https://github.com/jenneration/readme-generator;
 - [Questions](#questions)
 
 ## Description
-A node CLI application that generates a readme file
+CLI app
 
 ## Installation
 undefined
@@ -30,8 +30,8 @@ undefined
 
 ## License
 
-    This project is licensed under the standard $[MIT License](https://opensource.org/licenses/MIT);
+This project is licensed under the standard [MIT License](https://opensource.org/licenses/MIT);
 
 ## Questions
-Contact me with any questions: jjjggg, [GitHub](https://github.com/jenneration)
+Contact me with any questions: abcdefg, [GitHub](https://github.com/jenneration)
 

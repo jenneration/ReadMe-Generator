@@ -11,7 +11,7 @@ const badge = function renderLicenseBadge(license) {
     const splitLicense = license.split(" ", 1);
     console.log(splitLicense);
     if (license != "None") {
-        return `![GitHub license](https://img.shields.io/badge/license-${splitLicense}-blue.svg)`
+        return `[![GitHub license](https://img.shields.io/badge/license-${splitLicense}-blue.svg)]`
     } else {
         return "";
     }
@@ -36,7 +36,7 @@ const licenseSection = function renderLicenseSection(license) {
     if (license != "None") {
         return `## License
 
-    This project is licensed under the standard $[${license} License]`
+This project is licensed under the standard [${license} License]`
     }
 }
 console.log(licenseSection);
@@ -46,7 +46,7 @@ function generateMarkdown(data) {
     return `
 # ${data.title}
 
-[${badge(data.license)}](${licenseLink(data.license)});
+${badge(data.license)}${licenseLink(data.license)};
 ${url(data.username, data.title)};
 
 

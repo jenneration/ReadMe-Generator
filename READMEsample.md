@@ -1,8 +1,8 @@
 
-# Readme 
+# README
 
-[![GitHub license](https://img.shields.io/badge/license-GPL%3.0-blue.svg)](https://opensource.org/licenses/GPL-3.0);
-https://github.com/jenneration/readme-;
+[![GitHub license](https://img.shields.io/badge/license-GPL3.0-blue.svg)](https://opensource.org/licenses/GPL-3.0);
+https://github.com/jenneration/readme;
 
 
 ## Table of Contents
@@ -14,7 +14,7 @@ https://github.com/jenneration/readme-;
 - [Questions](#questions)
 
 ## Description
-No
+a project
 
 ## Installation
 undefined
@@ -33,5 +33,5 @@ undefined
 This project is licensed under the standard [GPL 3.0 License](https://opensource.org/licenses/GPL-3.0);
 
 ## Questions
-Contact me with any questions: myemail@gmail.com, [GitHub](https://github.com/jenneration)
+Contact me with any questions: lllll, [GitHub](https://github.com/jenneration)
 

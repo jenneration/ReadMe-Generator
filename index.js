@@ -15,26 +15,26 @@ const questions = [{
         message: "Provide a short description of your project.",
         name: "description"
     },
-    // {
-    //     type: "input",
-    //     message: "Provide installation instructions for your project.",
-    //     name: "installation"
-    // },
-    // {
-    //     type: "input",
-    //     message: "Describe the uses for your project.",
-    //     name: "usage"
-    // },
-    // {
-    //     type: "input",
-    //     message: "What are the guidelines for others to contribute to your project?",
-    //     name: "contributing"
-    // },
-    // {
-    //     type: "input",
-    //     message: "List test instructions, if any.",
-    //     name: "testing"
-    // },
+    {
+        type: "input",
+        message: "Provide installation instructions for your project.",
+        name: "installation"
+    },
+    {
+        type: "input",
+        message: "Describe the uses for your project.",
+        name: "usage"
+    },
+    {
+        type: "input",
+        message: "What are the guidelines for others to contribute to your project?",
+        name: "contributing"
+    },
+    {
+        type: "input",
+        message: "List test instructions, if any.",
+        name: "testing"
+    },
     {
         type: "list",
         message: "Do you have any licenses?",

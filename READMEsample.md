@@ -1,8 +1,8 @@
 
-# README
+# Readme Generator
 
-[![GitHub license](https://img.shields.io/badge/license-GPL3.0-blue.svg)](https://opensource.org/licenses/GPL-3.0);
-https://github.com/jenneration/readme;
+[![GitHub license](https://img.shields.io/badge/license-GPL3.0-blue.svg)](https://opensource.org/licenses/GPL-3.0)
+https://github.com/jenneration/readme-generator
 
 
 ## Table of Contents
@@ -14,24 +14,24 @@ https://github.com/jenneration/readme;
 - [Questions](#questions)
 
 ## Description
-a project
+A cli aplication build with node.js
 
 ## Installation
-undefined
+push buttons
 
 ## Usage
-undefined
+genrate a read me for your next project 
 
 ## Contributing
-undefined
+none
 
 ## Testing
-undefined
+none
 
 ## License
 
-This project is licensed under the standard [GPL 3.0 License](https://opensource.org/licenses/GPL-3.0);
+This project is licensed under the standard [GPL 3.0 License](https://opensource.org/licenses/GPL-3.0)
 
 ## Questions
-Contact me with any questions: lllll, [GitHub](https://github.com/jenneration)
+Contact me with any questions: jgarcia@gmail.com, [GitHub](https://github.com/jenneration)
 

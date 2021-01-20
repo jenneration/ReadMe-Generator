@@ -1,10 +1,10 @@
 //Function to return my project link
 const url = function generateProjectUrl(username, title) {
     const kebabCaseTitle = title.toLowerCase().split(" ").join("-");
-    return `https://github.com/${username}/${kebabCaseTitle}`;
+    return `https://github.com/${username}/${kebabCaseTitle}`
 };
 
-// TODO: BADGE: Create a function that returns a license badge based on which license is passed in
+// BADGE: Create function that returns license badge based on user choice in questions
 // If there is no license, return an empty string
 
 const badge = function renderLicenseBadge(license) {
@@ -13,7 +13,7 @@ const badge = function renderLicenseBadge(license) {
     if (license != "None") {
         return `[![GitHub license](https://img.shields.io/badge/license-${splitLicense}-blue.svg)]`
     } else {
-        return "";
+        return ("").replace(";", "")
     }
 }
 console.log(badge);
@@ -24,13 +24,13 @@ console.log(badge);
 const licenseLink = function renderLicenseLink(license) {
     const splitLicense = license.split(" ").join("-");
     if (license != "None") {
-        return `(https://opensource.org/licenses/${splitLicense})`;
+        return `(https://opensource.org/licenses/${splitLicense})`
     } else {
-        return "";
+        return ""
     }
 }
 
-// // TODO: LICENSE SECTION: Create function to return license section of README
+// LICENSE SECTION: Create function to return license section of README
 // If there is no license, return an empty string
 const licenseSection = function renderLicenseSection(license) {
     if (license != "None") {
@@ -39,15 +39,14 @@ const licenseSection = function renderLicenseSection(license) {
 This project is licensed under the standard [${license} License]`
     }
 }
-console.log(licenseSection);
 
-// TODO: Create a function to generate markdown for README
+//Create a function to generate markdown for README
 function generateMarkdown(data) {
     return `
 # ${data.title}
 
-${badge(data.license)}${licenseLink(data.license)};
-${url(data.username, data.title)};
+${badge(data.license)}${licenseLink(data.license)}
+${url(data.username, data.title)}
 
 
 ## Table of Contents
@@ -73,7 +72,7 @@ ${data.contributing}
 ## Testing
 ${data.testing}
 
-${licenseSection(data.license)}${licenseLink(data.license)};
+${licenseSection(data.license)}${licenseLink(data.license)}
 
 ## Questions
 Contact me with any questions: ${data.email}, [GitHub](https://github.com/${data.username})

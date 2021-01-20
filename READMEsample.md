@@ -1,8 +1,8 @@
 
-# Readme Generator
+# Readme 
 
-[![GitHub license](https://img.shields.io/badge/license-GPL-3.0-blue.svg)](https://opensource.org/licenses/GPL-3.0);
-https://github.com/jenneration/readme-generator;
+[![GitHub license](https://img.shields.io/badge/license-GPL%3.0-blue.svg)](https://opensource.org/licenses/GPL-3.0);
+https://github.com/jenneration/readme-;
 
 
 ## Table of Contents
@@ -14,7 +14,7 @@ https://github.com/jenneration/readme-generator;
 - [Questions](#questions)
 
 ## Description
-A cli application to create a readme
+No
 
 ## Installation
 undefined
@@ -33,5 +33,5 @@ undefined
 This project is licensed under the standard [GPL 3.0 License](https://opensource.org/licenses/GPL-3.0);
 
 ## Questions
-Contact me with any questions: my email, [GitHub](https://github.com/jenneration)
+Contact me with any questions: myemail@gmail.com, [GitHub](https://github.com/jenneration)
 

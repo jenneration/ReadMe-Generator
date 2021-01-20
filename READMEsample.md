@@ -1,8 +1,8 @@
 
-# Generator
+# Readme
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT);
-https://github.com/jenneration/generator;
+[![GitHub license](https://img.shields.io/badge/license-GPL 3.0-blue.svg)](https://opensource.org/licenses/GPL-3.0);
+https://github.com/jenneration/readme;
 
 
 ## Table of Contents
@@ -14,7 +14,7 @@ https://github.com/jenneration/generator;
 - [Questions](#questions)
 
 ## Description
-CLI app
+a cli application
 
 ## Installation
 undefined
@@ -30,8 +30,8 @@ undefined
 
 ## License
 
-This project is licensed under the standard [MIT License](https://opensource.org/licenses/MIT);
+This project is licensed under the standard [GPL 3.0 License](https://opensource.org/licenses/GPL-3.0);
 
 ## Questions
-Contact me with any questions: abcdefg, [GitHub](https://github.com/jenneration)
+Contact me with any questions: jjj, [GitHub](https://github.com/jenneration)
 

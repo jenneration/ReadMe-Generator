@@ -8,10 +8,10 @@ const url = function generateProjectUrl(username, title) {
 // If there is no license, return an empty string
 
 const badge = function renderLicenseBadge(license) {
-    const splitLicense = license.split(" ", 1);
-    console.log(splitLicense);
+    // const splitLicense = license.split(" ", 1);
+
     if (license != "None") {
-        return `[![GitHub license](https://img.shields.io/badge/license-${splitLicense}-blue.svg)]`
+        return `[![GitHub license](https://img.shields.io/badge/license-${license}-blue.svg)]`
     } else {
         return "";
     }

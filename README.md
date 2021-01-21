@@ -41,7 +41,7 @@ Due to time constraints the application is bare-bones and some steps I plan to i
 
 4. Allow user's direct input for other ways to contribute that may not be listed as choice.
 
-_end_
+
 
 
 

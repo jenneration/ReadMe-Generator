@@ -54,25 +54,8 @@ const questions = [{
     }
 ];
 
-// TODO: Create a function to write README file
-// function writeToFile(fileName, data) {
-//     return fs.writeFileSync(path.join(process.cwd(), fileName), data)
-// }
+//Initialize inquirer and render the README.md file
 
-
-// fs.writeFile('README.md', data, (err) =>
-//     err ? console.error(err) : console.log('Success!')
-// );
-
-
-
-
-// TODO: Create a function to initialize app
-// function init() {
-//     inquirer.prompt(questions).then(response => {
-//         writeToFile("README.md", generateMarkdown(response))
-//     })
-// }
 const data = inquirer.prompt.response;
 
 function init() {
@@ -81,13 +64,8 @@ function init() {
             if (err) throw err;
             console.log("Written");
         });
-    })
-}
-
-
-
-
-
+    });
+};
 
 // Function call to initialize app
 init();

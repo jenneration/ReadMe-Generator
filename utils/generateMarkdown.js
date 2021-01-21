@@ -108,9 +108,9 @@ ${data.testing}
 ## Questions
 Please contact me with any questions about this **Readme Generator**:
 
-At my [GitHub Profile page](https://github.com/${data.username})
+Visit my [GitHub Profile page](https://github.com/${data.username})
 
-Or by email:  ${data.email} 
+Or contact me by email:  ${data.email} 
 
 ${licenseSection(data.license)}${licenseLink(data.license)}
 

@@ -27,16 +27,21 @@ A user would use this application to generate a README file to upload to their G
 
 **See Full demo here:**
 (https://drive.google.com/file/d/15t-EwQFriKfsj_Ntes7Ld2lJJW6srLvh/view)
+_NOTE: if video appears "fuzzy" please view in full-screen mode. If still unclear, revert back to regular screen mode. One or both of these actions will render a in-focus video._
 
 
-## In the works
-Due to time constraints the application is bare-bones and there are more steps I plan to initiate to improve this project.
+## Issues/future improvements
+Due to time constraints the application is bare-bones and some steps I plan to initiate to improve this project are:
 
 1. Allow and render a user's choice for more than one license as well as other badges.
 
 2. Understand more about licenses and requirements and how to possibly take app a step further in linking to those.
 
 3. For descriptions, instructions, and installation notes, consider utilizing npm inquirer's feature that opens a text editor for the user.
+
+4. Allow user's direct input for other ways to contribute that may not be listed as choice.
+
+_end_
 
 
 

@@ -4,50 +4,82 @@ const url = function generateProjectUrl(username, title) {
     return `https://github.com/${username}/${kebabCaseTitle}`
 };
 
-// BADGE: Create function that returns license badge based on user choice in questions
-// If there is no license, return an empty string
-
+// LICENSE BADGE: Returns license badge per user selection
+// If no license, returns an empty string
 const badge = function renderLicenseBadge(license) {
     const splitLicense = license.split(" ").join("");
 
     if (license != "None") {
         return `[![GitHub license](https://img.shields.io/badge/license-${splitLicense}-blue.svg)]`
     } else {
-        return ("").replace(";", "")
-    }
-}
-console.log(badge);
+        return "";
+    };
+};
 
-
-// TODO: LICENSE LINK: Create function to return license link
-// If there is no license, return an empty string
+// LICENSE LINK: Returns license link
+// If there no license is chosen, return empty string
 const licenseLink = function renderLicenseLink(license) {
     const splitLicense = license.split(" ").join("-");
     if (license != "None") {
         return `(https://opensource.org/licenses/${splitLicense})`
     } else {
-        return ""
-    }
-}
+        return "";
+    };
+};
 
-// LICENSE SECTION: Create function to return license section of README
+// LICENSE SECTION: Returns license section of README
 // If there is no license, return an empty string
 const licenseSection = function renderLicenseSection(license) {
     if (license != "None") {
         return `## License
+Copyright &copy; Jenner Garcia 2021
 
 This project is licensed under the standard [${license} License]`
-    }
-}
+    };
+};
 
-//Create a function to generate markdown for README
+//LICENSE: Table of contents link
+const licenseTOC = function renderLicenseTOC(license) {
+    if (license != "None") {
+        return `- [License](#license)`
+    };
+};
+
+
+//CONTRIBUTING: Return text and links in README depending on user's answer to prompted questions
+function rendercontribLinks(contributing) {
+    console.log(contributing) //Test how data is returned
+
+    //If user passes over or has no contributing options: generate this message in README file.
+    if (contributing.length === 0) {
+        return `This project is not accepting contributions at this time`
+    } else {
+        //If user choses 1 or both contributing options: generate appropriate message in README file.
+        for (var i = 0; i < contributing.length; i++) {
+
+            if (contributing.length === 2) {
+                return `Contributions to this project are welcomed. Here are ways you can do that:
+            
+- [Submit issues and report Bugs](https://github.com/jenneration/ReadMe-Generator/issues)
+
+- [Request a review for new or modified code](https://github.com/jenneration/ReadMe-Generator/pulls)`;
+
+            } else if (contributing[i] === "Bug/Features") {
+                return `- [Submit issues and report Bugs](https://github.com/jenneration/ReadMe-Generator/issues)`;
+
+            } else if (contributing[i] === "Review Code") {
+                return `- [Request a review for new or modified code](https://github.com/jenneration/ReadMe-Generator/pulls)`;
+            }
+        };
+    }
+};
+
+//Generates markdown for README
 function generateMarkdown(data) {
     return `
 # ${data.title}
 
 ${badge(data.license)}${licenseLink(data.license)}
-${url(data.username, data.title)}
-
 
 ## Table of Contents
 - [Description](#description)
@@ -55,6 +87,7 @@ ${url(data.username, data.title)}
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [Testing](#testing)
+${licenseTOC(data.license)}
 - [Questions](#questions)
 
 ## Description
@@ -67,7 +100,7 @@ ${data.installation}
 ${data.usage}
 
 ## Contributing
-${data.contributing}
+${rendercontribLinks(data.contributing)}
 
 ## Testing
 ${data.testing}
@@ -75,7 +108,11 @@ ${data.testing}
 ${licenseSection(data.license)}${licenseLink(data.license)}
 
 ## Questions
-Contact me with any questions: ${data.email}, [GitHub](https://github.com/${data.username})
+Please contact me with any questions about my **Readme Generator**:
+
+[GitHub](https://github.com/${data.username})
+${data.email} 
+${url(data.username, data.title)}
 
 `;
 }

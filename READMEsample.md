@@ -1,9 +1,7 @@
 
 # Readme Generator
 
-[![GitHub license](https://img.shields.io/badge/license-GPL3.0-blue.svg)](https://opensource.org/licenses/GPL-3.0)
-https://github.com/jenneration/readme-generator
-
+[![GitHub license](https://img.shields.io/badge/license-Apache2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 ## Table of Contents
 - [Description](#description)
@@ -11,27 +9,37 @@ https://github.com/jenneration/readme-generator
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [Testing](#testing)
+- [License](#license)
 - [Questions](#questions)
 
 ## Description
-A cli aplication build with node.js
+A little cli application that generates a read me file based on user input.
 
 ## Installation
-push buttons
+node.js npm inquirer
 
 ## Usage
-genrate a read me for your next project 
+Ensure dependent packages are installed and in the terminal initialize the application by typing `node index.js`
 
 ## Contributing
-none
+Contributions to this project are welcomed. Here are ways you can do that:
+            
+- [Submit issues and report Bugs](https://github.com/jenneration/ReadMe-Generator/issues)
+
+- [Request a review for new or modified code](https://github.com/jenneration/ReadMe-Generator/pulls)
 
 ## Testing
-none
+None
 
 ## License
+Copyright &copy; Jenner Garcia 2021
 
-This project is licensed under the standard [GPL 3.0 License](https://opensource.org/licenses/GPL-3.0)
+This project is licensed under the standard [Apache 2.0 License](https://opensource.org/licenses/Apache-2.0)
 
 ## Questions
-Contact me with any questions: jgarcia@gmail.com, [GitHub](https://github.com/jenneration)
+Please contact me with any questions about my **Readme Generator**:
+
+[GitHub](https://github.com/jenneration)
+jldelaney11@gmail.com 
+https://github.com/jenneration/readme-generator
 

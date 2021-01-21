@@ -22,12 +22,13 @@ const questions = [{
     },
     {
         type: "input",
-        message: "Describe the uses for your project.",
+        message: "Describe how to use this application.",
         name: "usage"
     },
     {
-        type: "input",
+        type: "checkbox",
         message: "What are the guidelines for others to contribute to your project?",
+        choices: ["Review Code", "Bug/Features"],
         name: "contributing"
     },
     {

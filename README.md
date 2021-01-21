@@ -2,10 +2,14 @@
 # Readme Generator
 
 ## Description
-A command-line application (CLI) that dynamically generates a README.md file using user input to prompted questions.
+A command-line application (CLI) that dynamically generates a professional README.md file for all your GitHub projects. It presents a series of prompted questions, intakes user input, then generates a fully formatted README file.
 
 ## Usage
-A user would use this application to generate a README file to upload to their GitHub project repository.
+A user would use this application to generate a README file to upload to their GitHub project repository. To do so the user would:
+- Install required packages.
+- Open their terminal and input `node index.js` to initiate the program.
+- As a series of prompts occurs, user must accurately input answers that will be used by generator to render their README.md file.
+- Once prompts are completed, the generator creates a README.md and in with Markdown syntax formatting populates that file based on the user's inputted answers.
 
 ## Installation and Instructions
 - The project is built utilizing Node.js and uses the [Inquirer package](https://www.npmjs.com/package/inquirer) from npmjs.com.

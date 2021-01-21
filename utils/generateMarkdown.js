@@ -1,5 +1,5 @@
 //Function to return my project link
-const url = function generateProjectUrl(username, title) {
+var url = function generateProjectUrl(username, title) {
     const kebabCaseTitle = title.toLowerCase().split(" ").join("-");
     return `https://github.com/${username}/${kebabCaseTitle}`
 };
@@ -45,39 +45,42 @@ const licenseTOC = function renderLicenseTOC(license) {
     };
 };
 
-
-//CONTRIBUTING: Return text and links in README depending on user's answer to prompted questions
-function rendercontribLinks(contributing) {
-    console.log(contributing) //Test how data is returned
-
-    //If user passes over or has no contributing options: generate this message in README file.
-    if (contributing.length === 0) {
-        return `This project is not accepting contributions at this time`
-    } else {
-        //If user choses 1 or both contributing options: generate appropriate message in README file.
-        for (var i = 0; i < contributing.length; i++) {
-
-            if (contributing.length === 2) {
-                return `Contributions to this project are welcomed. There are a few ways you can do that:
-            
-- [Submit issues and report bugs](https://github.com/jenneration/ReadMe-Generator/issues), and help verify as they are checked in
-
-- Review the [documentation](https://github.com/jenneration/ReadMe-Generator) and make [pull requests](https://github.com/jenneration/ReadMe-Generator/pulls) for anything from typos to new content`;
-
-            } else if (contributing[i] === "Bug/Features") {
-                return `- [Submit issues and report Bugs](https://github.com/jenneration/ReadMe-Generator/issues)`;
-
-            } else if (contributing[i] === "Review Code") {
-                return `- [Request a review for new or modified code](https://github.com/jenneration/ReadMe-Generator/pulls)`;
-            }
-        };
-    }
-};
-
-//Generates markdown for README
+//RENDER PAGE: Generates markdown for README
 function generateMarkdown(data) {
-    return `
-# ${data.title}
+
+    //Format Contributions section per user choice(s)
+    function rendercontribLinks(contributing) {
+        //TODO: Need to find a shorter way to produce URL - previous attempts not pulling in URL for DRY coding
+        const bugs = `[Submit issues and report bugs](${url(data.username, data.title)}/issues), and help verify as they are checked in`;
+
+        const code = `Review the [documentation](${url(data.username, data.title)}) and make [pull requests](${url(data.username, data.title)}/pulls) for anything from typos to new content`;
+
+        //If user passes over or has no contributing options: generate this message in README file.
+        if (contributing.length === 0) {
+            return `This project is not accepting contributions at this time`
+        } else {
+            //If user choses 1 or both contributing options: generate appropriate message in README file.
+            for (var i = 0; i < contributing.length; i++) {
+
+                if (contributing.length === 2) {
+
+                    return `Contributions to this project are welcomed. There are a few ways you can do that:                    
+- ${bugs};
+
+- ${code}`;
+
+                } else if (contributing[i] === "Bug/Features") {
+                    return `- ${bugs}`
+
+                } else if (contributing[i] === "Review Code") {
+                    return `- ${code}`;
+                }
+            };
+        }
+    };
+
+    //Format page render
+    return `# ${data.title}
 
 ${badge(data.license)}${licenseLink(data.license)}
 
@@ -106,9 +109,9 @@ ${rendercontribLinks(data.contributing)}
 ${data.testing}
 
 ## Questions
-Please contact me with any questions about this **Readme Generator**:
+For questions or more information about this **Readme Generator** or other projects:
 
-Visit my [GitHub Profile page](https://github.com/${data.username})
+Visit my [GitHub profile page](https://github.com/${data.username})
 
 Or contact me by email:  ${data.email} 
 

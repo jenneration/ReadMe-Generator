@@ -58,11 +58,11 @@ function rendercontribLinks(contributing) {
         for (var i = 0; i < contributing.length; i++) {
 
             if (contributing.length === 2) {
-                return `Contributions to this project are welcomed. Here are ways you can do that:
+                return `Contributions to this project are welcomed. There are a few ways you can do that:
             
-- [Submit issues and report Bugs](https://github.com/jenneration/ReadMe-Generator/issues)
+- [Submit issues and report bugs](https://github.com/jenneration/ReadMe-Generator/issues), and help verify as they are checked in
 
-- [Request a review for new or modified code](https://github.com/jenneration/ReadMe-Generator/pulls)`;
+- Review the [documentation](https://github.com/jenneration/ReadMe-Generator) and make [pull requests](https://github.com/jenneration/ReadMe-Generator/pulls) for anything from typos to new content`;
 
             } else if (contributing[i] === "Bug/Features") {
                 return `- [Submit issues and report Bugs](https://github.com/jenneration/ReadMe-Generator/issues)`;
@@ -87,8 +87,8 @@ ${badge(data.license)}${licenseLink(data.license)}
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [Testing](#testing)
-${licenseTOC(data.license)}
 - [Questions](#questions)
+${licenseTOC(data.license)}
 
 ## Description
 ${data.description}
@@ -105,14 +105,14 @@ ${rendercontribLinks(data.contributing)}
 ## Testing
 ${data.testing}
 
-${licenseSection(data.license)}${licenseLink(data.license)}
-
 ## Questions
-Please contact me with any questions about my **Readme Generator**:
+Please contact me with any questions about this **Readme Generator**:
 
-[GitHub](https://github.com/${data.username})
-${data.email} 
-${url(data.username, data.title)}
+At GitHub:  [GitHub](https://github.com/${data.username})
+
+Or by email:  ${data.email} 
+
+${licenseSection(data.license)}${licenseLink(data.license)}
 
 `;
 }

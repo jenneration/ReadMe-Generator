@@ -1,5 +1,5 @@
 
-# REadme Generator
+# Readme Generator
 
 [![GitHub license](https://img.shields.io/badge/license-Apache2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
@@ -13,13 +13,13 @@
 - [License](#license)
 
 ## Description
-A cli application that generates a professional Readme for your next GitHub project
+A cli application that generates a professional readme for your GitHub projects
 
 ## Installation
-`node.js` `npm inquirer`
+`node.js` and `npm inquirer`
 
 ## Usage
-Install required packages. Open a terminal and to initialize type `node index.js`
+Intall required packages, open a teriminal, and type `node index.js` to initialize the app
 
 ## Contributing
 Contributions to this project are welcomed. There are a few ways you can do that:
@@ -34,9 +34,9 @@ None
 ## Questions
 Please contact me with any questions about this **Readme Generator**:
 
-At GitHub:  [GitHub](https://github.com/jenneration)
+At GitHub: (https://github.com/jenneration)
 
-Or by email:  j@gmail.com 
+Or by email:  jgarcia@gmail.com 
 
 ## License
 Copyright &copy; Jenner Garcia 2021

@@ -13,13 +13,13 @@
 - [License](#license)
 
 ## Description
-A cli application built with node.js that generates a professional readme file for your github projects
+A cli application that generates a professional readme file for your next GitHub project
 
 ## Installation
 `node.js` and `npm inquirer`
 
 ## Usage
-Install required packages. Open a terminal and type `node index.js`
+Install required packages. Open a terminal, and type `node index.js`
 
 ## Contributing
 Contributions to this project are welcomed. There are a few ways you can do that:
@@ -34,7 +34,7 @@ None
 ## Questions
 Please contact me with any questions about this **Readme Generator**:
 
-At [my GitHub Profile page](https://github.com/jenneration)
+At my [GitHub Profile page](https://github.com/jenneration)
 
 Or by email:  jenner.garcia@gmail.com 
 

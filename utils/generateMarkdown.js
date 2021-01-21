@@ -108,7 +108,7 @@ ${data.testing}
 ## Questions
 Please contact me with any questions about this **Readme Generator**:
 
-At [my GitHub Profile page](https://github.com/${data.username})
+At my [GitHub Profile page](https://github.com/${data.username})
 
 Or by email:  ${data.email} 
 
